@@ -1,0 +1,166 @@
+@font-face {
+    font-family: Avenir Next;
+    src: url("G:\ITS_DENMARK\AvenirNext-Regular.ttf") format('truetype');
+}
+
+   *, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: "Avenir Next", "Helevtica", "Verdana", "Tahoma", "Trebuchet MS", sans-serif;
+}
+
+.right-menu li {
+  list-style: none;
+}
+
+.right-menu a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Adjusted hover rule */
+.right-menu li a:hover {
+  color: #da7919;
+  box-shadow: inset 0 -5px #da7919;
+}
+
+.right-menu ul li {
+  width: 30%;
+  float: left;
+  text-align: center;
+  padding: 24px 30px;
+  cursor: pointer;
+  color: #eee;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+  position: relative;
+}
+
+.right-menu ul li ul.sub-nav {
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 150%; 
+    height: 220%; 
+    background: #fdd1a4;
+    border-top: 1px solid #fdd1a4;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.14), -1px 0px 1px rgba(0, 0, 0, 0.14);
+    visibility: hidden;
+    opacity: 0;
+    z-index: 500;
+}
+
+.right-menu ul li ul.sub-nav li {
+  font-size: 14px;
+  width: 100%;
+  padding: 15px 0;
+}
+
+.right-menu ul li ul.sub-nav li:hover {
+  color: #da7919;
+  box-shadow: 0 0;
+}
+
+.right-menu ul li:hover ul.sub-nav {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.nav-wrapper {
+  height: 108px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20%;
+  padding-right: 10%;
+  align-items: center;
+  background-color: #fdd1a4;
+  z-index: 999;
+}
+
+.right-menu {
+  display: flex;
+  padding-right: 12px;
+}
+
+.right-menu .right-menu-items {
+  display: flex;
+}
+
+.right-menu .right-menu-items li a {
+  padding: 20px 12px;
+}
+
+.logo {
+  width: 90px;
+  height: 90px;
+  padding: 5px;
+}
+
+.main-wrapper {
+  background-image: url("/assets/lucrezia-carnelos-gvc7MK4gnDk-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  z-index: -1;
+}
+
+.main-wrapper .welcome-note {
+  position: relative;
+  top: 30%;
+}
+
+footer{
+    display: block;
+    clear: both;
+    background-color: rgb(38, 38, 38);
+    text-align: center;
+    color: white;
+    padding: 25px;
+}
+
+.fa {
+  padding: 14px;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+
+}
+
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #ed654a;
+  color: white; 
+}

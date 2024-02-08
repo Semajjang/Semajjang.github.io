@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="HeaderFooter.css">
+</head>
+<header class="nav-wrapper">
+	<a href="index.html">
+	  <img src="IMG_2584.JPG" alt="Chai Grove" class="logo" />
+	</a>
+	<nav class="right-menu">
+	  <ul class="right-menu-items">
+		 <li><a href="index.html">Home</a></li>
+		 <li><a href="menu.html">Menu</a>
+			 <ul class="sub-nav">
+				  <li><a href="menu.html">Milk Tea</a></li>
+				  <li><a href="menu.html">Coffee</a></li>
+				  <li><a href="menu.html">Food</a></li>
+				 </ul>
+		  </li>
+		<li><a href="About.html">About</a></li>
+		  <li><a href="contact.html">Contacts</a></li>
+	  </ul>
+	</nav>
+</header>
+      <style>
+section {
+    margin-top: 3em;
+    font-family: Arial;
+    min-height: 720px;
+}
+
+.menu {
+    margin-top: 3em;
+}
+
+.side-bar {
+    width: 20%;
+    margin-top: 2.5em;
+}
+
+.side-bar .search-bar {
+    width: 100%;
+    display: flex;
+    background-color: white;
+    border: 2px solid #9B4722;
+    border-radius: 1em;
+    margin-bottom: 1.5em;
+}
+
+.search-bar img {
+    width: 30px;
+    height: 30px;
+}
+
+.search-bar input[type="text"], .search-bar input[type="text"]:focus {
+    width: 100%;
+    padding: 3px;
+    background-color: white;
+    color: #9B4722;
+    border: none;
+    outline: none;
+    border-radius: 1em;
+}
+
+.side-bar h5 {
+    font-size: 1.4em;
+}
+
+.side-bar #product-details {
+    color: #26282a;
+}
+
+.side-bar #drinks, .side-bar #food {
+    color: #9B4722;
+}
+
+#details {
+    color: #26282a;
+    border-left: 2px solid #26282a;
+    padding-left: 0.5em;
+}
+
+.drinks, .food {
+    border-left: 2px solid #9B4722;
+    padding-left: 0.5em;
+}
+
+.drinks input[type="radio"], .food input[type="radio"] {
+    appearance: none;
+}
+
+.drinks input[type="radio"]+label, .food input[type="radio"]+label {
+    text-decoration: none;
+    color: #b9a37a;
+    transition: color 0.3s ease, margin 0.3s ease;
+    border-bottom: 2px solid white;
+    cursor: pointer;
+}
+
+.drinks input[type="radio"]:hover+label,  
+.drinks input[type="radio"]:checked+label, 
+.food input[type="radio"]:hover+label,
+.food input[type="radio"]:checked+label {
+    color: #9B4722;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 4px;
+    border-bottom: 2px solid #9B4722;
+}
+
+.drinks li {
+    margin-bottom: 1em;
+}
+
+#medium-price, #large-price {
+    display: none;
+}
+
+
+.view {
+    width: 80%;
+    margin-top: 2em;
+}
+
+.view .card {
+    cursor: pointer;
+    border: none;
+    width: 15em;
+    height: 15em;
+    margin: 15px;
+}
+
+.view .card img {
+    width: 10em;
+    border-radius: 100%;
+    background-color: #5C5545;
+    padding: 10px;
+    margin: auto;
+    margin-top: 0em;
+    margin-bottom: 5px;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.view .card h4 {
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    color: #26282a;
+}
+
+@media (max-width: 425px) {
+    .side-bar {
+        width: 0px;
+    }
+
+    .side-bar .drinks,
+    .side-bar #drinks,
+    .side-bar .food,
+    .side-bar #food {
+        display: none;
+    }
+
+    .side-bar .search-bar {
+        width: 90%;
+        position: fixed;
+        top: 80px;
+        left: 5%;
+        z-index: 1;
+    }
+    .side-bar .details-container {
+        background-color: #b9a37a;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .details-container h5 {
+        text-align: center;
+    }
+    .details-container #details {
+        border: none;
+        padding: 0;
+        display: flex;
+    }
+
+    .details-container p {
+        width: 150px;
+        margin: auto;
+    }
+    .view {
+        width: 100%;
+    }
+}
+      </style>
+      <style>
+.body {
+    padding-top: 70px; 
+    background-color:#E2DED2;
+  }
+  
+  
+        body {
+          line-height: 1.5;
+        }
+  
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+  
+        .container {
+          max-width: 1170px;
+          margin: auto;
+        }
+  
+        .row {
+          display: flex;
+          flex-wrap: wrap;
+        }
+  
+        ul {
+          list-style: none;
+        }
+  
+      </style>
+      <section>
+        <div class="container">
+            <div class="menu" style="display: flex;">
+                <nav class="side-bar">
+                  <div class="search-bar">
+                    <img src="./images/menu/search.png" alt="">
+                    <input type="text" id="search-bar" name="search-bar" onchange="search(this.value)">
+                  </div>
+                  <h5 id="drinks">Milk Tea</h5>
+                  <ul class="drinks">
+                    <li><input  type="radio" name="products" id="regular" onclick="fil('r')"><label for="regular">Regular</label></li>
+                    <li><input type="radio" name="products" id="premium" onclick="fil('p')"><label for="premium">Premium</label></li>
+                  </ul>
+                  <h5 id="drinks">Coffee</h5>
+                  <ul class="drinks">
+                    <li><input type="radio" name="products" id="coffee" onclick="fil('c')"><label for="coffee">Coffee</label></li>
+                  </ul>
+                  <h5 id="food-section">Food</h5>
+                  <ul class="food"> 
+                      <li><input type="radio" name="products" id="food-radio" onclick="fil('f')"><label for="food-radio">Food</label></li>
+                  </ul>                  
+                  <div class="details-container">
+                    <h5 id="product-details">Product Details</h5>
+                    <div id="details">
+                      <p id="medium-price">Medium:</p>
+                      <p id="large-price">Large:</p>
+                      <p id="food-price">Food:</p>
+                    </div>
+                  </div>
+                </nav>
+                <div class="view">
+                    <div class="row"  id="card-container" style="align-items: center; justify-content: center;">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h2>Follow us at</h2><br>
+    
+        <a href="https://www.facebook.com/ChaiGrove/" class="fa fa-facebook"></a>
+    
+        <span style="color: rgb(56, 56, 56)"><br><br>Rameses Asuncion, James Carrillo, <br>	Junella Oalican, Kenneth Padilla, Ryan Patenia</span>
+    
+    </footer>
+    
+    <script src="menu.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
+</body>
+</html>
